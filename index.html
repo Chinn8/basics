@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS Practice</title>
+    <style>
+        /* Basic CSS Styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #3498db;
+            padding: 20px;
+            color: white;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            color: #2980b9;
+            margin-top: 30px;
+        }
+
+        h3 {
+            color: #555;
+        }
+
+        p {
+            color: #444;
+            margin-bottom: 15px;
+        }
+
+        .highlight {
+            background-color: #ffeaa7;
+            padding: 15px;
+            border-left: 5px solid #fdcb6e;
+            margin-bottom: 20px;
+        }
+
+        section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 5px;
+        }
+
+        video, audio {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #3498db;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        ul, ol {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #c1ccd6;
+            color: white;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HTML & CSS Practice Page</h1>
+        <p>A demonstration of various HTML elements with CSS styling</p>
+    </header>
+
+    <section>
+        <h2>Heading Tags</h2>
+        <h1>This is an H1 Heading</h1>
+        <h2>This is an H2 Heading</h2>
+        <h3>This is an H3 Heading</h3>
+        <h4>This is an H4 Heading</h4>
+        <h5>This is an H5 Heading</h5>
+        <h6>This is an H6 Heading</h6>
+    </section>
+
+    <section>
+        <h2>Paragraph Tags</h2>
+        <p>This is a standard paragraph. The paragraph tag (p) is one of the most basic HTML elements. It represents a paragraph of text.</p>
+        
+        <p class="highlight">This is a highlighted paragraph with a special class applied. CSS can be used to style specific elements using classes and IDs.</p>
+        
+        <p>HTML allows you to create <strong>strong (bold)</strong> text and <em>emphasized (italic)</em> text using the appropriate tags.</p>
+    </section>
+
+    <section>
+        <h2>Image Tag</h2>
+        <img src="WhatsApp Image 2025-04-26 at 21.44.41_a6dae602.jpg" alt="Placeholder Image">
+        <p>The image above is a placeholder. The img tag requires src (source) and alt (alternative text) attributes.</p>
+    </section>
+
+    <section>
+        <h2>Video Tag</h2>
+        <video controls width="600">
+            <source src="Your Name_Kimi.No.Na.Wa.2016_Videoclip3.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p>The video tag allows you to embed videos in your HTML document. The controls attribute adds play/pause buttons.</p>
+    </section>
+
+    <section>
+        <h2>Audio Tag</h2>
+        <audio controls>
+            <source src="erwins_speech_aot.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <p>The audio tag embeds sound content in your HTML document. Like the video tag, it often uses the controls attribute.</p>
+    </section>
+
+    <section>
+        <h2>List Tags</h2>
+        
+        <h3>Unordered List (ul)</h3>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+        </ul>
+        
+        <h3>Ordered List (ol)</h3>
+        <ol>
+            <li>First item</li>
+            <li>Second item</li>
+            <li>Third item</li>
+            <li>Fourth item</li>
+        </ol>
+        
+        <h3>Definition List (dl)</h3>
+        <dl>
+            <dt>HTML</dt>
+            <dd>HyperText Markup Language - the standard markup language for creating web pages</dd>
+            
+            <dt>CSS</dt>
+            <dd>Cascading Style Sheets - used for describing the presentation of a document written in HTML</dd>
+        </dl>
+    </section>
+
+    <section>
+        <h2>Table Tag</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Country</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Doe</td>
+                    <td>30</td>
+                    <td>United States</td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>28</td>
+                    <td>Canada</td>
+                </tr>
+                <tr>
+                    <td>Alice Johnson</td>
+                    <td>35</td>
+                    <td>United Kingdom</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Link Tag (a)</h2>
+        <p>This is a <a href="https://example.com" target="_blank">link to example.com</a> that opens in a new tab.</p>
+        <p>Links are created using the anchor (a) tag. The href attribute specifies the destination.</p>
+    </section>
+
+    <section>
+        <h2>Form Elements</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name">
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Enter your message"></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="country">Country:</label>
+                <select id="country" name="country">
+                    <option value="">Select your country</option>
+                    <option value="us">United States</option>
+                    <option value="ca">Canada</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="au">Australia</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+            </div>
+            
+            <div class="form-group">
+                <label>Interests:</label>
+                <input type="checkbox" id="coding" name="interests" value="coding">
+                <label for="coding">Coding</label>
+                <input type="checkbox" id="design" name="interests" value="design">
+                <label for="design">Design</label>
+                <input type="checkbox" id="reading" name="interests" value="reading">
+                <label for="reading">Reading</label>
+            </div>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Semantic Elements</h2>
+        <article>
+            <h3>Article Example</h3>
+            <p>This is an example of an article element. It represents an independent, self-contained piece of content.</p>
+        </article>
+        
+        <aside>
+            <h3>Aside Example</h3>
+            <p>This is an example of an aside element. It represents content that is tangentially related to the content around it.</p>
+        </aside>
+    </section>
+    <section>
+        <h2>Quotation and Citation</h2>
+        <blockquote cite="https://example.com">
+            <p>This is a blockquote. It's often used to highlight text from another source.</p>
+        </blockquote>
+        
+        <p>According to someone, <q>This is an inline quote using the q tag.</q></p>
+        
+        <p>The book <cite>HTML & CSS: Design and Build Websites</cite> by Jon Duckett is a great resource for beginners.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 HTML & CSS Practice Page | Created for learning purposes</p>
+        <p>This page demonstrates various HTML elements and CSS styling techniques</p>
+    </footer>
+</body>
+</html>
